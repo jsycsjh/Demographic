@@ -1,0 +1,441 @@
+Linear mixed-effects model fit by maximum likelihood
+ Data: x 
+       AIC     BIC    logLik
+  12259.85 12349.9 -6115.927
+
+Random effects:
+ Formula: ~1 + session_int | participantId
+ Structure: General positive-definite, Log-Cholesky parametrization
+            StdDev    Corr  
+(Intercept) 0.7683298 (Intr)
+session_int 0.2235189 -0.29 
+Residual    0.7016503       
+
+Fixed effects: posExpBiasScale ~ condition + session_int + condition * session_int 
+                                              Value  Std.Error   DF  t-value p-value
+(Intercept)                               3.1185112 0.08721318 3820 35.75734  0.0000
+conditionPOSITIVE_NEGATION               -0.0420625 0.12956977  760 -0.32463  0.7455
+conditionNEUTRAL                          0.0689586 0.10617159  760  0.64950  0.5162
+conditionFIFTY_FIFTY_RANDOM              -0.1411039 0.12356968  760 -1.14190  0.2539
+conditionFIFTY_FIFTY_BLOCKED              0.2937187 0.13021830  760  2.25559  0.0244
+session_int                               0.5390812 0.02416723 3820 22.30628  0.0000
+conditionPOSITIVE_NEGATION:session_int   -0.0723561 0.03590447 3820 -2.01524  0.0439
+conditionNEUTRAL:session_int             -0.2494176 0.02942071 3820 -8.47762  0.0000
+conditionFIFTY_FIFTY_RANDOM:session_int  -0.0721729 0.03424181 3820 -2.10774  0.0351
+conditionFIFTY_FIFTY_BLOCKED:session_int -0.2401551 0.03608418 3820 -6.65541  0.0000
+ Correlation: 
+                                         (Intr) cnPOSITIVE_NEGATION cnNEUTRAL cnFIFTY_FIFTY_RANDOM
+conditionPOSITIVE_NEGATION               -0.673                                                   
+conditionNEUTRAL                         -0.821  0.553                                            
+conditionFIFTY_FIFTY_RANDOM              -0.706  0.475               0.580                        
+conditionFIFTY_FIFTY_BLOCKED             -0.670  0.451               0.550     0.473              
+session_int                              -0.526  0.354               0.432     0.371              
+conditionPOSITIVE_NEGATION:session_int    0.354 -0.526              -0.291    -0.250              
+conditionNEUTRAL:session_int              0.432 -0.291              -0.526    -0.305              
+conditionFIFTY_FIFTY_RANDOM:session_int   0.371 -0.250              -0.305    -0.526              
+conditionFIFTY_FIFTY_BLOCKED:session_int  0.352 -0.237              -0.290    -0.249              
+                                         cnFIFTY_FIFTY_BLOCKED sssn_n cPOSITIVE_NEGATION: cNEUTRAL:
+conditionPOSITIVE_NEGATION                                                                         
+conditionNEUTRAL                                                                                   
+conditionFIFTY_FIFTY_RANDOM                                                                        
+conditionFIFTY_FIFTY_BLOCKED                                                                       
+session_int                               0.352                                                    
+conditionPOSITIVE_NEGATION:session_int   -0.237                -0.673                              
+conditionNEUTRAL:session_int             -0.290                -0.821  0.553                       
+conditionFIFTY_FIFTY_RANDOM:session_int  -0.249                -0.706  0.475               0.580   
+conditionFIFTY_FIFTY_BLOCKED:session_int -0.526                -0.670  0.451               0.550   
+                                         cFIFTY_FIFTY_RANDOM:
+conditionPOSITIVE_NEGATION                                   
+conditionNEUTRAL                                             
+conditionFIFTY_FIFTY_RANDOM                                  
+conditionFIFTY_FIFTY_BLOCKED                                 
+session_int                                                  
+conditionPOSITIVE_NEGATION:session_int                       
+conditionNEUTRAL:session_int                                 
+conditionFIFTY_FIFTY_RANDOM:session_int                      
+conditionFIFTY_FIFTY_BLOCKED:session_int  0.473              
+
+Standardized Within-Group Residuals:
+         Min           Q1          Med           Q3          Max 
+-3.816967414 -0.568104037 -0.006334829  0.576416475  3.258899045 
+
+Number of Observations: 4590
+Number of Groups: 765 
+Linear mixed-effects model fit by maximum likelihood
+ Data: x 
+       AIC      BIC    logLik
+  11188.53 11278.57 -5580.264
+
+Random effects:
+ Formula: ~session_int | participantId
+ Structure: General positive-definite, Log-Cholesky parametrization
+            StdDev    Corr  
+(Intercept) 0.8397084 (Intr)
+session_int 0.1805623 -0.406
+Residual    0.6210605       
+
+Fixed effects: negExpBiasScale ~ condition + session_int + condition * session_int 
+                                             Value  Std.Error   DF   t-value p-value
+(Intercept)                               4.209422 0.08816822 3820  47.74308  0.0000
+conditionPOSITIVE_NEGATION                0.167022 0.13098863  760   1.27509  0.2027
+conditionNEUTRAL                          0.001107 0.10733423  760   0.01031  0.9918
+conditionFIFTY_FIFTY_RANDOM               0.032279 0.12492284  760   0.25839  0.7962
+conditionFIFTY_FIFTY_BLOCKED             -0.068606 0.13164426  760  -0.52115  0.6024
+session_int                              -0.348652 0.02021581 3820 -17.24649  0.0000
+conditionPOSITIVE_NEGATION:session_int    0.067896 0.03003396 3820   2.26065  0.0238
+conditionNEUTRAL:session_int              0.143085 0.02461032 3820   5.81401  0.0000
+conditionFIFTY_FIFTY_RANDOM:session_int   0.117177 0.02864316 3820   4.09091  0.0000
+conditionFIFTY_FIFTY_BLOCKED:session_int  0.135436 0.03018429 3820   4.48697  0.0000
+ Correlation: 
+                                         (Intr) cnPOSITIVE_NEGATION cnNEUTRAL cnFIFTY_FIFTY_RANDOM
+conditionPOSITIVE_NEGATION               -0.673                                                   
+conditionNEUTRAL                         -0.821  0.553                                            
+conditionFIFTY_FIFTY_RANDOM              -0.706  0.475               0.580                        
+conditionFIFTY_FIFTY_BLOCKED             -0.670  0.451               0.550     0.473              
+session_int                              -0.582  0.392               0.478     0.411              
+conditionPOSITIVE_NEGATION:session_int    0.392 -0.582              -0.322    -0.276              
+conditionNEUTRAL:session_int              0.478 -0.322              -0.582    -0.337              
+conditionFIFTY_FIFTY_RANDOM:session_int   0.411 -0.276              -0.337    -0.582              
+conditionFIFTY_FIFTY_BLOCKED:session_int  0.390 -0.262              -0.320    -0.275              
+                                         cnFIFTY_FIFTY_BLOCKED sssn_n cPOSITIVE_NEGATION: cNEUTRAL:
+conditionPOSITIVE_NEGATION                                                                         
+conditionNEUTRAL                                                                                   
+conditionFIFTY_FIFTY_RANDOM                                                                        
+conditionFIFTY_FIFTY_BLOCKED                                                                       
+session_int                               0.390                                                    
+conditionPOSITIVE_NEGATION:session_int   -0.262                -0.673                              
+conditionNEUTRAL:session_int             -0.320                -0.821  0.553                       
+conditionFIFTY_FIFTY_RANDOM:session_int  -0.275                -0.706  0.475               0.580   
+conditionFIFTY_FIFTY_BLOCKED:session_int -0.582                -0.670  0.451               0.550   
+                                         cFIFTY_FIFTY_RANDOM:
+conditionPOSITIVE_NEGATION                                   
+conditionNEUTRAL                                             
+conditionFIFTY_FIFTY_RANDOM                                  
+conditionFIFTY_FIFTY_BLOCKED                                 
+session_int                                                  
+conditionPOSITIVE_NEGATION:session_int                       
+conditionNEUTRAL:session_int                                 
+conditionFIFTY_FIFTY_RANDOM:session_int                      
+conditionFIFTY_FIFTY_BLOCKED:session_int  0.473              
+
+Standardized Within-Group Residuals:
+         Min           Q1          Med           Q3          Max 
+-4.323030515 -0.539259916  0.003346167  0.547639486  3.896371140 
+
+Number of Observations: 4590
+Number of Groups: 765 
+Linear mixed-effects model fit by maximum likelihood
+ Data: x 
+       AIC      BIC    logLik
+  15901.46 15991.51 -7936.731
+
+Random effects:
+ Formula: ~1 + session_int | participantId
+ Structure: General positive-definite, Log-Cholesky parametrization
+            StdDev    Corr  
+(Intercept) 1.7140287 (Intr)
+session_int 0.2036009 -0.48 
+Residual    1.0545135       
+
+Fixed effects: depressionScale ~ condition * session_int 
+                                              Value  Std.Error   DF   t-value p-value
+(Intercept)                               2.4495817 0.17082210 3820 14.339958  0.0000
+conditionPOSITIVE_NEGATION                0.4301935 0.25378480  760  1.695111  0.0905
+conditionNEUTRAL                          0.5679156 0.20795543  760  2.730949  0.0065
+conditionFIFTY_FIFTY_RANDOM               0.8765056 0.24203260  760  3.621436  0.0003
+conditionFIFTY_FIFTY_BLOCKED              0.5804633 0.25505506  760  2.275835  0.0231
+session_int                              -0.0395434 0.02802256 3820 -1.411128  0.1583
+conditionPOSITIVE_NEGATION:session_int   -0.1829535 0.04163220 3820 -4.394518  0.0000
+conditionNEUTRAL:session_int             -0.1726444 0.03411411 3820 -5.060791  0.0000
+conditionFIFTY_FIFTY_RANDOM:session_int  -0.2278358 0.03970431 3820 -5.738314  0.0000
+conditionFIFTY_FIFTY_BLOCKED:session_int -0.2037679 0.04184058 3820 -4.870102  0.0000
+ Correlation: 
+                                         (Intr) cnPOSITIVE_NEGATION cnNEUTRAL cnFIFTY_FIFTY_RANDOM
+conditionPOSITIVE_NEGATION               -0.673                                                   
+conditionNEUTRAL                         -0.821  0.553                                            
+conditionFIFTY_FIFTY_RANDOM              -0.706  0.475               0.580                        
+conditionFIFTY_FIFTY_BLOCKED             -0.670  0.451               0.550     0.473              
+session_int                              -0.609  0.410               0.500     0.430              
+conditionPOSITIVE_NEGATION:session_int    0.410 -0.609              -0.337    -0.289              
+conditionNEUTRAL:session_int              0.500 -0.337              -0.609    -0.353              
+conditionFIFTY_FIFTY_RANDOM:session_int   0.430 -0.289              -0.353    -0.609              
+conditionFIFTY_FIFTY_BLOCKED:session_int  0.408 -0.275              -0.335    -0.288              
+                                         cnFIFTY_FIFTY_BLOCKED sssn_n cPOSITIVE_NEGATION: cNEUTRAL:
+conditionPOSITIVE_NEGATION                                                                         
+conditionNEUTRAL                                                                                   
+conditionFIFTY_FIFTY_RANDOM                                                                        
+conditionFIFTY_FIFTY_BLOCKED                                                                       
+session_int                               0.408                                                    
+conditionPOSITIVE_NEGATION:session_int   -0.275                -0.673                              
+conditionNEUTRAL:session_int             -0.335                -0.821  0.553                       
+conditionFIFTY_FIFTY_RANDOM:session_int  -0.288                -0.706  0.475               0.580   
+conditionFIFTY_FIFTY_BLOCKED:session_int -0.609                -0.670  0.451               0.550   
+                                         cFIFTY_FIFTY_RANDOM:
+conditionPOSITIVE_NEGATION                                   
+conditionNEUTRAL                                             
+conditionFIFTY_FIFTY_RANDOM                                  
+conditionFIFTY_FIFTY_BLOCKED                                 
+session_int                                                  
+conditionPOSITIVE_NEGATION:session_int                       
+conditionNEUTRAL:session_int                                 
+conditionFIFTY_FIFTY_RANDOM:session_int                      
+conditionFIFTY_FIFTY_BLOCKED:session_int  0.473              
+
+Standardized Within-Group Residuals:
+         Min           Q1          Med           Q3          Max 
+-3.053410785 -0.577933987  0.001457317  0.572376782  3.261465151 
+
+Number of Observations: 4590
+Number of Groups: 765 
+Linear mixed-effects model fit by maximum likelihood
+ Data: x 
+       AIC     BIC    logLik
+  16231.56 16321.6 -8101.779
+
+Random effects:
+ Formula: ~1 + session_int | participantId
+ Structure: General positive-definite, Log-Cholesky parametrization
+            StdDev    Corr  
+(Intercept) 1.6641585 (Intr)
+session_int 0.2370933 -0.549
+Residual    1.1063039       
+
+Fixed effects: anxietyScale ~ condition * session_int 
+                                             Value  Std.Error   DF   t-value p-value
+(Intercept)                               3.227342 0.16925003 3820 19.068486  0.0000
+conditionPOSITIVE_NEGATION                0.868602 0.25144923  760  3.454381  0.0006
+conditionNEUTRAL                          0.434011 0.20604163  760  2.106426  0.0355
+conditionFIFTY_FIFTY_RANDOM               0.228314 0.23980518  760  0.952082  0.3414
+conditionFIFTY_FIFTY_BLOCKED              0.160237 0.25270780  760  0.634081  0.5262
+session_int                              -0.091054 0.03071611 3820 -2.964363  0.0031
+conditionPOSITIVE_NEGATION:session_int   -0.259136 0.04563392 3820 -5.678572  0.0000
+conditionNEUTRAL:session_int             -0.115581 0.03739319 3820 -3.090952  0.0020
+conditionFIFTY_FIFTY_RANDOM:session_int  -0.130017 0.04352072 3820 -2.987479  0.0028
+conditionFIFTY_FIFTY_BLOCKED:session_int -0.072483 0.04586233 3820 -1.580446  0.1141
+ Correlation: 
+                                         (Intr) cnPOSITIVE_NEGATION cnNEUTRAL cnFIFTY_FIFTY_RANDOM
+conditionPOSITIVE_NEGATION               -0.673                                                   
+conditionNEUTRAL                         -0.821  0.553                                            
+conditionFIFTY_FIFTY_RANDOM              -0.706  0.475               0.580                        
+conditionFIFTY_FIFTY_BLOCKED             -0.670  0.451               0.550     0.473              
+session_int                              -0.664  0.447               0.545     0.468              
+conditionPOSITIVE_NEGATION:session_int    0.447 -0.664              -0.367    -0.315              
+conditionNEUTRAL:session_int              0.545 -0.367              -0.664    -0.385              
+conditionFIFTY_FIFTY_RANDOM:session_int   0.468 -0.315              -0.385    -0.664              
+conditionFIFTY_FIFTY_BLOCKED:session_int  0.445 -0.299              -0.365    -0.314              
+                                         cnFIFTY_FIFTY_BLOCKED sssn_n cPOSITIVE_NEGATION: cNEUTRAL:
+conditionPOSITIVE_NEGATION                                                                         
+conditionNEUTRAL                                                                                   
+conditionFIFTY_FIFTY_RANDOM                                                                        
+conditionFIFTY_FIFTY_BLOCKED                                                                       
+session_int                               0.445                                                    
+conditionPOSITIVE_NEGATION:session_int   -0.299                -0.673                              
+conditionNEUTRAL:session_int             -0.365                -0.821  0.553                       
+conditionFIFTY_FIFTY_RANDOM:session_int  -0.314                -0.706  0.475               0.580   
+conditionFIFTY_FIFTY_BLOCKED:session_int -0.664                -0.670  0.451               0.550   
+                                         cFIFTY_FIFTY_RANDOM:
+conditionPOSITIVE_NEGATION                                   
+conditionNEUTRAL                                             
+conditionFIFTY_FIFTY_RANDOM                                  
+conditionFIFTY_FIFTY_BLOCKED                                 
+session_int                                                  
+conditionPOSITIVE_NEGATION:session_int                       
+conditionNEUTRAL:session_int                                 
+conditionFIFTY_FIFTY_RANDOM:session_int                      
+conditionFIFTY_FIFTY_BLOCKED:session_int  0.473              
+
+Standardized Within-Group Residuals:
+         Min           Q1          Med           Q3          Max 
+-3.339546088 -0.582766022 -0.004077987  0.570485875  3.610474188 
+
+Number of Observations: 4590
+Number of Groups: 765 
+Linear mixed-effects model fit by maximum likelihood
+ Data: x 
+       AIC      BIC    logLik
+  8468.491 8558.534 -4220.245
+
+Random effects:
+ Formula: ~1 + session_int | participantId
+ Structure: General positive-definite, Log-Cholesky parametrization
+            StdDev    Corr  
+(Intercept) 0.8795400 (Intr)
+session_int 0.1665157 -0.56 
+Residual    0.4269794       
+
+Fixed effects: selfEffScale ~ condition + session_int + condition:session_int 
+                                              Value  Std.Error   DF   t-value p-value
+(Intercept)                               2.2447813 0.08347078 3820 26.893018  0.0000
+conditionPOSITIVE_NEGATION               -0.0740143 0.12400981  760 -0.596842  0.5508
+conditionNEUTRAL                         -0.1349016 0.10161567  760 -1.327567  0.1847
+conditionFIFTY_FIFTY_RANDOM              -0.1829384 0.11826720  760 -1.546822  0.1223
+conditionFIFTY_FIFTY_BLOCKED              0.0523103 0.12463051  760  0.419723  0.6748
+session_int                               0.1734826 0.01689046 3820 10.271041  0.0000
+conditionPOSITIVE_NEGATION:session_int    0.0047031 0.02509361 3820  0.187424  0.8513
+conditionNEUTRAL:session_int             -0.0585047 0.02056211 3820 -2.845268  0.0045
+conditionFIFTY_FIFTY_RANDOM:session_int  -0.0057166 0.02393158 3820 -0.238873  0.8112
+conditionFIFTY_FIFTY_BLOCKED:session_int -0.0329984 0.02521921 3820 -1.308463  0.1908
+ Correlation: 
+                                         (Intr) cnPOSITIVE_NEGATION cnNEUTRAL cnFIFTY_FIFTY_RANDOM
+conditionPOSITIVE_NEGATION               -0.673                                                   
+conditionNEUTRAL                         -0.821  0.553                                            
+conditionFIFTY_FIFTY_RANDOM              -0.706  0.475               0.580                        
+conditionFIFTY_FIFTY_BLOCKED             -0.670  0.451               0.550     0.473              
+session_int                              -0.628  0.423               0.516     0.444              
+conditionPOSITIVE_NEGATION:session_int    0.423 -0.628              -0.347    -0.299              
+conditionNEUTRAL:session_int              0.516 -0.347              -0.628    -0.364              
+conditionFIFTY_FIFTY_RANDOM:session_int   0.444 -0.299              -0.364    -0.628              
+conditionFIFTY_FIFTY_BLOCKED:session_int  0.421 -0.283              -0.346    -0.297              
+                                         cnFIFTY_FIFTY_BLOCKED sssn_n cPOSITIVE_NEGATION: cNEUTRAL:
+conditionPOSITIVE_NEGATION                                                                         
+conditionNEUTRAL                                                                                   
+conditionFIFTY_FIFTY_RANDOM                                                                        
+conditionFIFTY_FIFTY_BLOCKED                                                                       
+session_int                               0.421                                                    
+conditionPOSITIVE_NEGATION:session_int   -0.283                -0.673                              
+conditionNEUTRAL:session_int             -0.346                -0.821  0.553                       
+conditionFIFTY_FIFTY_RANDOM:session_int  -0.297                -0.706  0.475               0.580   
+conditionFIFTY_FIFTY_BLOCKED:session_int -0.628                -0.670  0.451               0.550   
+                                         cFIFTY_FIFTY_RANDOM:
+conditionPOSITIVE_NEGATION                                   
+conditionNEUTRAL                                             
+conditionFIFTY_FIFTY_RANDOM                                  
+conditionFIFTY_FIFTY_BLOCKED                                 
+session_int                                                  
+conditionPOSITIVE_NEGATION:session_int                       
+conditionNEUTRAL:session_int                                 
+conditionFIFTY_FIFTY_RANDOM:session_int                      
+conditionFIFTY_FIFTY_BLOCKED:session_int  0.473              
+
+Standardized Within-Group Residuals:
+         Min           Q1          Med           Q3          Max 
+-3.104697422 -0.560434067 -0.003940093  0.558375808  3.426942314 
+
+Number of Observations: 4590
+Number of Groups: 765 
+Linear mixed-effects model fit by maximum likelihood
+ Data: x 
+       AIC      BIC    logLik
+  8923.838 9013.881 -4447.919
+
+Random effects:
+ Formula: ~1 + session_int | participantId
+ Structure: General positive-definite, Log-Cholesky parametrization
+            StdDev    Corr  
+(Intercept) 0.8238067 (Intr)
+session_int 0.1528716 -0.474
+Residual    0.4633450       
+
+Fixed effects: growthMindScale ~ condition + session_int + condition * session_int 
+                                              Value  Std.Error   DF   t-value p-value
+(Intercept)                               1.9943701 0.08041910 3820 24.799707  0.0000
+conditionPOSITIVE_NEGATION               -0.1002364 0.11947602  760 -0.838967  0.4018
+conditionNEUTRAL                          0.0365462 0.09790061  760  0.373299  0.7090
+conditionFIFTY_FIFTY_RANDOM              -0.0563577 0.11394336  760 -0.494612  0.6210
+conditionFIFTY_FIFTY_BLOCKED              0.0764814 0.12007403  760  0.636952  0.5243
+session_int                               0.1305002 0.01632585 3820  7.993472  0.0000
+conditionPOSITIVE_NEGATION:session_int    0.0376860 0.02425478 3820  1.553756  0.1203
+conditionNEUTRAL:session_int             -0.0706581 0.01987477 3820 -3.555167  0.0004
+conditionFIFTY_FIFTY_RANDOM:session_int   0.0392879 0.02313160 3820  1.698450  0.0895
+conditionFIFTY_FIFTY_BLOCKED:session_int -0.0166703 0.02437618 3820 -0.683876  0.4941
+ Correlation: 
+                                         (Intr) cnPOSITIVE_NEGATION cnNEUTRAL cnFIFTY_FIFTY_RANDOM
+conditionPOSITIVE_NEGATION               -0.673                                                   
+conditionNEUTRAL                         -0.821  0.553                                            
+conditionFIFTY_FIFTY_RANDOM              -0.706  0.475               0.580                        
+conditionFIFTY_FIFTY_BLOCKED             -0.670  0.451               0.550     0.473              
+session_int                              -0.585  0.394               0.480     0.413              
+conditionPOSITIVE_NEGATION:session_int    0.394 -0.585              -0.323    -0.278              
+conditionNEUTRAL:session_int              0.480 -0.323              -0.585    -0.339              
+conditionFIFTY_FIFTY_RANDOM:session_int   0.413 -0.278              -0.339    -0.585              
+conditionFIFTY_FIFTY_BLOCKED:session_int  0.392 -0.264              -0.322    -0.276              
+                                         cnFIFTY_FIFTY_BLOCKED sssn_n cPOSITIVE_NEGATION: cNEUTRAL:
+conditionPOSITIVE_NEGATION                                                                         
+conditionNEUTRAL                                                                                   
+conditionFIFTY_FIFTY_RANDOM                                                                        
+conditionFIFTY_FIFTY_BLOCKED                                                                       
+session_int                               0.392                                                    
+conditionPOSITIVE_NEGATION:session_int   -0.264                -0.673                              
+conditionNEUTRAL:session_int             -0.322                -0.821  0.553                       
+conditionFIFTY_FIFTY_RANDOM:session_int  -0.276                -0.706  0.475               0.580   
+conditionFIFTY_FIFTY_BLOCKED:session_int -0.585                -0.670  0.451               0.550   
+                                         cFIFTY_FIFTY_RANDOM:
+conditionPOSITIVE_NEGATION                                   
+conditionNEUTRAL                                             
+conditionFIFTY_FIFTY_RANDOM                                  
+conditionFIFTY_FIFTY_BLOCKED                                 
+session_int                                                  
+conditionPOSITIVE_NEGATION:session_int                       
+conditionNEUTRAL:session_int                                 
+conditionFIFTY_FIFTY_RANDOM:session_int                      
+conditionFIFTY_FIFTY_BLOCKED:session_int  0.473              
+
+Standardized Within-Group Residuals:
+         Min           Q1          Med           Q3          Max 
+-3.108863843 -0.563011512 -0.008953552  0.556230671  3.960980214 
+
+Number of Observations: 4590
+Number of Groups: 765 
+Linear mixed-effects model fit by maximum likelihood
+ Data: x 
+       AIC      BIC    logLik
+  8692.913 8782.956 -4332.456
+
+Random effects:
+ Formula: ~1 + session_int | participantId
+ Structure: General positive-definite, Log-Cholesky parametrization
+            StdDev    Corr  
+(Intercept) 0.9148606 (Intr)
+session_int 0.1421521 -0.365
+Residual    0.4371677       
+
+Fixed effects: optimismScale ~ condition + session_int + condition * session_int 
+                                              Value  Std.Error   DF   t-value p-value
+(Intercept)                               1.6835812 0.08659360 3820 19.442328  0.0000
+conditionPOSITIVE_NEGATION               -0.2374089 0.12864927  760 -1.845396  0.0654
+conditionNEUTRAL                         -0.1999873 0.10541733  760 -1.897101  0.0582
+conditionFIFTY_FIFTY_RANDOM              -0.1110393 0.12269182  760 -0.905026  0.3657
+conditionFIFTY_FIFTY_BLOCKED              0.0211790 0.12929320  760  0.163806  0.8699
+session_int                               0.1198107 0.01525800 3820  7.852321  0.0000
+conditionPOSITIVE_NEGATION:session_int    0.0711785 0.02266831 3820  3.140001  0.0017
+conditionNEUTRAL:session_int             -0.0218607 0.01857478 3820 -1.176902  0.2393
+conditionFIFTY_FIFTY_RANDOM:session_int  -0.0165196 0.02161859 3820 -0.764139  0.4448
+conditionFIFTY_FIFTY_BLOCKED:session_int -0.0038837 0.02278177 3820 -0.170474  0.8646
+ Correlation: 
+                                         (Intr) cnPOSITIVE_NEGATION cnNEUTRAL cnFIFTY_FIFTY_RANDOM
+conditionPOSITIVE_NEGATION               -0.673                                                   
+conditionNEUTRAL                         -0.821  0.553                                            
+conditionFIFTY_FIFTY_RANDOM              -0.706  0.475               0.580                        
+conditionFIFTY_FIFTY_BLOCKED             -0.670  0.451               0.550     0.473              
+session_int                              -0.485  0.326               0.398     0.342              
+conditionPOSITIVE_NEGATION:session_int    0.326 -0.485              -0.268    -0.230              
+conditionNEUTRAL:session_int              0.398 -0.268              -0.485    -0.281              
+conditionFIFTY_FIFTY_RANDOM:session_int   0.342 -0.230              -0.281    -0.485              
+conditionFIFTY_FIFTY_BLOCKED:session_int  0.325 -0.219              -0.267    -0.229              
+                                         cnFIFTY_FIFTY_BLOCKED sssn_n cPOSITIVE_NEGATION: cNEUTRAL:
+conditionPOSITIVE_NEGATION                                                                         
+conditionNEUTRAL                                                                                   
+conditionFIFTY_FIFTY_RANDOM                                                                        
+conditionFIFTY_FIFTY_BLOCKED                                                                       
+session_int                               0.325                                                    
+conditionPOSITIVE_NEGATION:session_int   -0.219                -0.673                              
+conditionNEUTRAL:session_int             -0.267                -0.821  0.553                       
+conditionFIFTY_FIFTY_RANDOM:session_int  -0.229                -0.706  0.475               0.580   
+conditionFIFTY_FIFTY_BLOCKED:session_int -0.485                -0.670  0.451               0.550   
+                                         cFIFTY_FIFTY_RANDOM:
+conditionPOSITIVE_NEGATION                                   
+conditionNEUTRAL                                             
+conditionFIFTY_FIFTY_RANDOM                                  
+conditionFIFTY_FIFTY_BLOCKED                                 
+session_int                                                  
+conditionPOSITIVE_NEGATION:session_int                       
+conditionNEUTRAL:session_int                                 
+conditionFIFTY_FIFTY_RANDOM:session_int                      
+conditionFIFTY_FIFTY_BLOCKED:session_int  0.473              
+
+Standardized Within-Group Residuals:
+         Min           Q1          Med           Q3          Max 
+-2.949474990 -0.564158865 -0.005815347  0.566864436  3.769866850 
+
+Number of Observations: 4590
+Number of Groups: 765 

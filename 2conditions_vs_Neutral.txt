@@ -1,0 +1,245 @@
+Linear mixed-effects model fit by maximum likelihood
+ Data: x 
+       AIC      BIC    logLik
+  12287.05 12351.37 -6133.527
+
+Random effects:
+ Formula: ~1 + session_int | participantId
+ Structure: General positive-definite, Log-Cholesky parametrization
+            StdDev    Corr  
+(Intercept) 0.7854250 (Intr)
+session_int 0.2098613 -0.347
+Residual    0.7142087       
+
+Fixed effects: posExpBiasScale ~ condition + session_int + condition * session_int 
+                                    Value  Std.Error   DF  t-value p-value
+(Intercept)                      3.240871 0.06619406 3822 48.96015  0.0000
+conditionFIFTYFIFTY             -0.071534 0.09053120  762 -0.79016  0.4297
+conditionPOSITIVE               -0.106063 0.09332552  762 -1.13648  0.2561
+session_int                      0.344110 0.01740212 3822 19.77404  0.0000
+conditionFIFTYFIFTY:session_int -0.056361 0.02380025 3822 -2.36806  0.0179
+conditionPOSITIVE:session_int    0.150894 0.02453486 3822  6.15018  0.0000
+ Correlation: 
+                                (Intr) cnFIFTYFIFTY cnPOSITIVE sssn_n cFIFTYFIFTY:
+conditionFIFTYFIFTY             -0.731                                            
+conditionPOSITIVE               -0.709  0.519                                     
+session_int                     -0.572  0.418        0.406                        
+conditionFIFTYFIFTY:session_int  0.418 -0.572       -0.297     -0.731             
+conditionPOSITIVE:session_int    0.406 -0.297       -0.572     -0.709  0.519      
+
+Standardized Within-Group Residuals:
+          Min            Q1           Med            Q3           Max 
+-3.647403e+00 -5.572885e-01  9.206133e-05  5.678904e-01  3.735510e+00 
+
+Number of Observations: 4590
+Number of Groups: 765 
+Linear mixed-effects model fit by maximum likelihood
+ Data: x 
+       AIC      BIC    logLik
+  11475.72 11540.03 -5727.859
+
+Random effects:
+ Formula: ~session_int | participantId
+ Structure: General positive-definite, Log-Cholesky parametrization
+            StdDev    Corr  
+(Intercept) 0.8026864 (Intr)
+session_int 0.1765392 -0.313
+Residual    0.6483404       
+
+Fixed effects: negExpBiasScale ~ condition + session_int + condition * session_int 
+                                    Value  Std.Error   DF   t-value p-value
+(Intercept)                      4.169057 0.06460064 3822  64.53584  0.0000
+conditionFIFTYFIFTY             -0.015979 0.08835194  762  -0.18086  0.8565
+conditionPOSITIVE                0.074447 0.09107900  762   0.81739  0.4140
+session_int                     -0.183566 0.01511089 3822 -12.14790  0.0000
+conditionFIFTYFIFTY:session_int -0.005290 0.02066661 3822  -0.25599  0.7980
+conditionPOSITIVE:session_int   -0.120345 0.02130451 3822  -5.64879  0.0000
+ Correlation: 
+                                (Intr) cnFIFTYFIFTY cnPOSITIVE sssn_n cFIFTYFIFTY:
+conditionFIFTYFIFTY             -0.731                                            
+conditionPOSITIVE               -0.709  0.519                                     
+session_int                     -0.544  0.398        0.386                        
+conditionFIFTYFIFTY:session_int  0.398 -0.544       -0.282     -0.731             
+conditionPOSITIVE:session_int    0.386 -0.282       -0.544     -0.709  0.519      
+
+Standardized Within-Group Residuals:
+         Min           Q1          Med           Q3          Max 
+-2.934944461 -0.558026688 -0.007409207  0.574133057  3.491858125 
+
+Number of Observations: 4590
+Number of Groups: 765 
+Linear mixed-effects model fit by maximum likelihood
+ Data: x 
+       AIC      BIC   logLik
+  15784.42 15848.74 -7882.21
+
+Random effects:
+ Formula: ~1 + session_int | participantId
+ Structure: General positive-definite, Log-Cholesky parametrization
+            StdDev    Corr  
+(Intercept) 1.7871944 (Intr)
+session_int 0.2395706 -0.618
+Residual    1.0349781       
+
+Fixed effects: depressionScale ~ condition * session_int 
+                                     Value  Std.Error   DF   t-value p-value
+(Intercept)                      3.0822535 0.13060279 3822 23.600212  0.0000
+conditionFIFTYFIFTY             -0.0294147 0.17862068  762 -0.164677  0.8692
+conditionPOSITIVE               -0.4825429 0.18413396  762 -2.620608  0.0090
+session_int                     -0.2150640 0.02215270 3822 -9.708254  0.0000
+conditionFIFTYFIFTY:session_int  0.0182997 0.03029744 3822  0.604002  0.5459
+conditionPOSITIVE:session_int    0.0834090 0.03123260 3822  2.670574  0.0076
+ Correlation: 
+                                (Intr) cnFIFTYFIFTY cnPOSITIVE sssn_n cFIFTYFIFTY:
+conditionFIFTYFIFTY             -0.731                                            
+conditionPOSITIVE               -0.709  0.519                                     
+session_int                     -0.685  0.501        0.486                        
+conditionFIFTYFIFTY:session_int  0.501 -0.685       -0.355     -0.731             
+conditionPOSITIVE:session_int    0.486 -0.355       -0.685     -0.709  0.519      
+
+Standardized Within-Group Residuals:
+         Min           Q1          Med           Q3          Max 
+-3.157434847 -0.584886435 -0.008835371  0.570322380  3.349867195 
+
+Number of Observations: 4590
+Number of Groups: 765 
+Linear mixed-effects model fit by maximum likelihood
+ Data: x 
+       AIC      BIC    logLik
+  16303.79 16368.11 -8141.897
+
+Random effects:
+ Formula: ~1 + session_int | participantId
+ Structure: General positive-definite, Log-Cholesky parametrization
+            StdDev    Corr  
+(Intercept) 1.7383251 (Intr)
+session_int 0.2842156 -0.678
+Residual    1.1149661       
+
+Fixed effects: anxietyScale ~ condition * session_int 
+                                    Value  Std.Error   DF   t-value p-value
+(Intercept)                      3.444286 0.13023399 3822 26.446908  0.0000
+conditionFIFTYFIFTY              0.201624 0.17811628  762  1.131980  0.2580
+conditionPOSITIVE                0.237778 0.18361399  762  1.294989  0.1957
+session_int                     -0.140475 0.02506309 3822 -5.604869  0.0000
+conditionFIFTYFIFTY:session_int -0.045092 0.03427787 3822 -1.315499  0.1884
+conditionPOSITIVE:session_int   -0.063479 0.03533589 3822 -1.796448  0.0725
+ Correlation: 
+                                (Intr) cnFIFTYFIFTY cnPOSITIVE sssn_n cFIFTYFIFTY:
+conditionFIFTYFIFTY             -0.731                                            
+conditionPOSITIVE               -0.709  0.519                                     
+session_int                     -0.739  0.541        0.525                        
+conditionFIFTYFIFTY:session_int  0.541 -0.739       -0.384     -0.731             
+conditionPOSITIVE:session_int    0.525 -0.384       -0.739     -0.709  0.519      
+
+Standardized Within-Group Residuals:
+        Min          Q1         Med          Q3         Max 
+-3.48138060 -0.58522397 -0.01759352  0.58549829  3.52894274 
+
+Number of Observations: 4590
+Number of Groups: 765 
+Linear mixed-effects model fit by maximum likelihood
+ Data: x 
+       AIC      BIC    logLik
+  8473.318 8537.634 -4226.659
+
+Random effects:
+ Formula: ~1 + session_int | participantId
+ Structure: General positive-definite, Log-Cholesky parametrization
+            StdDev    Corr  
+(Intercept) 0.8205155 (Intr)
+session_int 0.1335545 -0.448
+Residual    0.4417596       
+
+Fixed effects: selfEffScale ~ condition + session_int + condition:session_int 
+                                     Value  Std.Error   DF  t-value p-value
+(Intercept)                      2.1648439 0.05903772 3822 36.66882  0.0000
+conditionFIFTYFIFTY              0.0414442 0.08074374  762  0.51328  0.6079
+conditionPOSITIVE                0.0089598 0.08323597  762  0.10764  0.9143
+session_int                      0.1409610 0.01095186 3822 12.87097  0.0000
+conditionFIFTYFIFTY:session_int -0.0537499 0.01497846 3822 -3.58848  0.0003
+conditionPOSITIVE:session_int    0.0276613 0.01544078 3822  1.79144  0.0733
+ Correlation: 
+                                (Intr) cnFIFTYFIFTY cnPOSITIVE sssn_n cFIFTYFIFTY:
+conditionFIFTYFIFTY             -0.731                                            
+conditionPOSITIVE               -0.709  0.519                                     
+session_int                     -0.564  0.412        0.400                        
+conditionFIFTYFIFTY:session_int  0.412 -0.564       -0.292     -0.731             
+conditionPOSITIVE:session_int    0.400 -0.292       -0.564     -0.709  0.519      
+
+Standardized Within-Group Residuals:
+         Min           Q1          Med           Q3          Max 
+-3.362597224 -0.569803706  0.007226682  0.561844305  3.640507138 
+
+Number of Observations: 4590
+Number of Groups: 765 
+Linear mixed-effects model fit by maximum likelihood
+ Data: x 
+       AIC      BIC    logLik
+  9062.999 9127.315 -4521.499
+
+Random effects:
+ Formula: ~1 + session_int | participantId
+ Structure: General positive-definite, Log-Cholesky parametrization
+            StdDev    Corr  
+(Intercept) 0.7475185 (Intr)
+session_int 0.1197633 -0.213
+Residual    0.4857407       
+
+Fixed effects: growthMindScale ~ condition + session_int + condition * session_int 
+                                     Value  Std.Error   DF  t-value p-value
+(Intercept)                      2.0120747 0.05619725 3822 35.80379  0.0000
+conditionFIFTYFIFTY             -0.0222807 0.07685893  762 -0.28989  0.7720
+conditionPOSITIVE                0.0153261 0.07923125  762  0.19344  0.8467
+session_int                      0.1013653 0.01073000 3822  9.44690  0.0000
+conditionFIFTYFIFTY:session_int -0.0382542 0.01467503 3822 -2.60675  0.0092
+conditionPOSITIVE:session_int    0.0217648 0.01512799 3822  1.43871  0.1503
+ Correlation: 
+                                (Intr) cnFIFTYFIFTY cnPOSITIVE sssn_n cFIFTYFIFTY:
+conditionFIFTYFIFTY             -0.731                                            
+conditionPOSITIVE               -0.709  0.519                                     
+session_int                     -0.455  0.333        0.323                        
+conditionFIFTYFIFTY:session_int  0.333 -0.455       -0.236     -0.731             
+conditionPOSITIVE:session_int    0.323 -0.236       -0.455     -0.709  0.519      
+
+Standardized Within-Group Residuals:
+         Min           Q1          Med           Q3          Max 
+-3.198914821 -0.593185674 -0.000504826  0.576659709  3.640373362 
+
+Number of Observations: 4590
+Number of Groups: 765 
+Linear mixed-effects model fit by maximum likelihood
+ Data: x 
+       AIC      BIC    logLik
+  8667.976 8732.293 -4323.988
+
+Random effects:
+ Formula: ~1 + session_int | participantId
+ Structure: General positive-definite, Log-Cholesky parametrization
+            StdDev    Corr  
+(Intercept) 0.9091876 (Intr)
+session_int 0.1288648 -0.401
+Residual    0.4446909       
+
+Fixed effects: optimismScale ~ condition + session_int + condition * session_int 
+                                     Value  Std.Error   DF   t-value p-value
+(Intercept)                      1.6085595 0.06426031 3822 25.031930  0.0000
+conditionFIFTYFIFTY             -0.1123312 0.08788648  762 -1.278140  0.2016
+conditionPOSITIVE               -0.0244720 0.09059917  762 -0.270113  0.7871
+session_int                      0.1213239 0.01074549 3822 11.290686  0.0000
+conditionFIFTYFIFTY:session_int -0.0337118 0.01469621 3822 -2.293913  0.0218
+conditionPOSITIVE:session_int    0.0430578 0.01514982 3822  2.842131  0.0045
+ Correlation: 
+                                (Intr) cnFIFTYFIFTY cnPOSITIVE sssn_n cFIFTYFIFTY:
+conditionFIFTYFIFTY             -0.731                                            
+conditionPOSITIVE               -0.709  0.519                                     
+session_int                     -0.518  0.379        0.368                        
+conditionFIFTYFIFTY:session_int  0.379 -0.518       -0.269     -0.731             
+conditionPOSITIVE:session_int    0.368 -0.269       -0.518     -0.709  0.519      
+
+Standardized Within-Group Residuals:
+         Min           Q1          Med           Q3          Max 
+-3.638339348 -0.562900970 -0.008640172  0.558459846  3.054713645 
+
+Number of Observations: 4590
+Number of Groups: 765 
